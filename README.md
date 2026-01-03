@@ -33,13 +33,13 @@ cd taskManagement
 2. Run tests:
 
 ```
-./gradlew.bat test --no-daemon
+./gradlew.bat test
 ```
 
 3. Build the project (jar):
 
 ```
-./gradlew.bat build --no-daemon
+./gradlew.bat build
 ```
 
 4. Run the application locally:
@@ -55,15 +55,15 @@ The app will start on port 8080 by default: `http://localhost:8080`.
 
 Run the full test suite locally:
 
-```powershell
+```
 ./gradlew.bat test
 ```
 
-Unit tests and integration-style tests are included under `src/test/java`.
+Unit tests and integration tests are included under `src/test/java`.
 
 ---
 
-## 🧭 Project Structure (high level)
+## Project Structure (high level)
 
 - `com.taskmanagement.domain` — domain entities (`Task`, `TaskStatus`)
 - `com.taskmanagement.dto` — request/response DTOs

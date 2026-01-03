@@ -62,10 +62,6 @@ public class InMemoryTaskRepository implements TaskRepository {
         return tasks.subList(fromIndex, toIndex);
     }
 
-    /**
-     * Clears all tasks from the in-memory repository.
-     * Useful for resetting state in integration tests.
-     */
     public void clear() {
         store.clear();
     }
