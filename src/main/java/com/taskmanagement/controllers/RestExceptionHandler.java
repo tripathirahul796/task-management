@@ -36,10 +36,9 @@ public class RestExceptionHandler {
                 ));
     }
 
-    // NEW: Handle validation errors
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<?> handleValidationErrors(MethodArgumentNotValidException ex) {
-        // Collect all field errors into a single message
         String msg = ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
